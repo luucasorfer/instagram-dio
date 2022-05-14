@@ -36,6 +36,8 @@ body {
 
 .instagram-phone img {
   height: 50rem;
+  margin: -20px 0 0 50px;
+  position: absolute;
 }
 
 .instagram-autentication {
@@ -101,7 +103,7 @@ body {
   margin-bottom: .5rem;
 }
 
-.log-in span{
+.log-in span {
   margin-left: 4px;
   font-weight: bolder;
 }
@@ -110,10 +112,12 @@ body {
   color: #0095f6;
   margin-top: 1rem;
 }
+
 .not-account {
   color: rgb(160, 160, 160);
   padding: 8px;
 }
+
 .link-blue {
   color: #0095f6;
   font-weight: bolder;
@@ -129,7 +133,7 @@ body {
   padding: 1.3rem 0;
 }
 
-.download{
+.download {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -137,16 +141,43 @@ body {
   padding: 1rem;
 }
 
-.app-download{
+.app-download {
   height: 3rem;
   width: 10rem;
   background-size: cover;
 }
 
-.app-download:nth-child(1){
+.app-download:nth-child(1) {
   background-image: url(./img/apple-button.png);
 }
 
-.app-download:nth-child(2){
+.app-download:nth-child(2) {
   background-image: url(./img/googleplay-button.png);
+}
+
+/* Adicionando responsividade */
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-autentication {
+    width: 100%;
+  }
 }
